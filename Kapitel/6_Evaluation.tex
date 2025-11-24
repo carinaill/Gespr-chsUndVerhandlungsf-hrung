@@ -1,0 +1,292 @@
+\chapter{Evaluation}
+
+Your Evaluation goes here ...
+
+\section{Datasets Used for Evaluation}
+
+
+\begin{table}[H]
+\centering
+    %\fbox{%
+    \begin{tabular}{ c | c | c | c | c | c | c | c | c }
+    seq\textunderscore name & mcg & gvh & lip & chg & aac & alm1 & alm2 & class\\
+    \hline
+    other & number & number & number & number & number & number & number & classifier\\
+    \end{tabular}
+    %}%
+    \caption{Allocation of data types for \textit{ecoli.header}}
+    \label{tab:ecolihead}
+\end{table}
+
+Before delving into each individual dataset, Table \ref{tab:datasetoverview} provides a brief overview of their key data.
+
+\begin{table}[H]
+\centering
+    \fbox{%
+    \begin{tabular}{ c || c | c | c | c }
+    dataset & instances & attributes & numeric attributes & classes\\
+    \hline 
+    \hline
+    iris & 150 & 4 & 4 & 3\\
+    \hline
+    ecoli & 336 & 8 & 7 & 7\\
+    \hline
+    wdbc & 569 & 32 & 30 & 2\\
+    \hline
+    wine & 179 & 13 & 13 & 3\\
+    \hline
+    yeast & 1484 & 8 & 7 & 9\\
+    \hline
+    statlog & 2000 & 36 & 36 & 6(7)\\
+    \end{tabular}
+    }%
+    \caption{Key data on used datasets}
+    \label{tab:datasetoverview}
+\end{table}
+
+
+
+
+\section{Design of Evaluation}
+
+\subsection{Metrics of Evaluation}
+
+\subsubsection{Convergence and Reliability}
+
+\subsection{Initial Configuration for Evaluation}
+
+
+\begin{table}[H]
+\centering
+    \fbox{%
+    \begin{tabular}{ c || c | c | c }
+    dataset & $DSC_{start}$ & $CD_{start}$ & $d_{c,total,start}$\\
+    \hline 
+    \hline
+    ecoli & 63.88\% & 11636 & 3073\\
+    \hline
+    iris & 89.93\% & 3585 & 340\\
+    \hline
+    statlog & 21.06\% & 65743 & 112\\
+    \hline
+    wdbc & 86.27\% & 22820 & 79\\
+    \hline
+    wine & 72.32\% & 7703 & 201\\
+    \hline
+    yeast & 27.44\% & 44547 & 2613\\
+    \end{tabular}
+    }%
+    \caption{Key values of the initial projection for each dataset}
+    \label{tab:initial_values}
+\end{table}
+
+\subsection{Comparison}
+
+\begin{table}[H]
+\centering
+    \fbox{%
+    \begin{tabular}{ c | c | c }
+    Max. Number of Iterations & Penalty Threshold & Orthographic\\
+    \hline 
+    1000 & 100 & Yes\\
+    \end{tabular}
+    }%
+    \caption{Standard configuration for heuristic comparison}
+    \label{tab:standard_configuration}
+\end{table}
+
+\subsection{Behaviour with Different Parameters}
+
+\subsubsection{Modification of Termination Criteria}
+
+
+\begin{table}[H]
+\centering
+    \fbox{%
+    \begin{tabular}{ c | c | c }
+    Max. Number of Iterations & Penalty Threshold & Orthographic\\
+    \hline 
+    1000 & 25 | 50 & Yes\\
+    \end{tabular}
+    }%
+    \caption{Configuration for heuristic comparison with reduced}
+    \label{tab:configuration_reduce_penalty}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \fbox{%
+    \begin{tabular}{ c | c | c }
+    Max. Number of Iterations & Penalty Threshold &  Orthographic\\
+    \hline 
+    1000 & 150 | 200 & Yes\\
+    \end{tabular}
+    }%
+    \caption{Configuration for heuristic comparison with increased}
+    \label{tab:configuration_increase_penalty}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \fbox{%
+    \begin{tabular}{ c | c | c }
+    Max. Number of Iterations & Penalty Threshold & Orthographic\\
+    \hline 
+    500 | 1000 | 2000 & None & Yes\\
+    \end{tabular}
+    }%
+    \caption{Configuration for heuristic comparison without PT and different iterations}
+    \label{tab:configuration_remove_penalty}
+\end{table}
+
+
+\section{Results of Evaluation}
+
+\subsubsection{Qualitative Comparison}
+
+\subsubsection{Quantitative Comparison}
+
+\begin{table}[H]
+\centering
+    \fbox{%
+    \begin{tabular}{ c || c | c | c | c  }
+    dataset & $\Delta DSC$ & $\Delta CD$ & CDC & iterations\\
+    \hline 
+    \hline
+    ecoli & 1.19\% & 99.87\% & 100.42\% & 12\\
+    \hline
+    iris & 0\% & 102.49\% & 105.29\% & 75\\
+    \hline
+    statlog & 7.7\% & 99.67\% & 198.21\% & 64\\
+    \hline
+    wdbc & 8.45\% & 138.83\% & 83.54\% & 852\\
+    \hline
+    wine & 20.34\% & 102.17\% & 175.62\% & 423\\
+    \hline
+    yeast & -0.06\% & 99.19\% & 100.84\% & 33\\
+    \end{tabular}
+    }%
+    \caption{Impact on key values in comparison to initial projection for each dataset by RSS}
+    \label{tab:standard_comparison_var1_results}
+\end{table}
+
+
+
+\begin{table}[H]
+\centering
+    \fbox{%
+    \begin{tabular}{ c || c | c | c | c  }
+    dataset & $\Delta DSC$ & $\Delta CD$ & CDC & iterations\\
+    \hline 
+    \hline
+    ecoli & 0\% & 99.86\% & 100.16\% & 8\\
+    \hline
+    iris & 0.67\% & 102.92\% & 107.06\% & 79\\
+    \hline
+    statlog & 1.7\% & 99.93\% & 117.86\% & 13\\
+    \hline
+    wdbc & 8.45\% & 139.15\% & 82.28\% & 685\\
+    \hline
+    wine & 20.9\% & 102.04\% & 177.61\% & 456\\
+    \hline
+    yeast & 0\% & 99.63\% & 100.11\% & 18\\
+    \end{tabular}
+    }%
+    \caption{Impact on key values in comparison to initial projection for each dataset by OSS}
+    \label{tab:standard_comparison_var2_results}
+\end{table}
+
+
+
+\begin{table}[H]
+\centering
+    \fbox{%
+    \begin{tabular}{ c || c | c | c | c  }
+    dataset & $\Delta DSC$ & $\Delta CD$ & CDC & iterations\\
+    \hline 
+    \hline
+    ecoli & 3.88\% & 100.79\% & 102.05\% & 214\\
+    \hline
+    iris & 3.36\% & 115.24\% & 130.59\% & 551\\
+    \hline
+    statlog & 20.21\% & 104.97\% & 370.54\% & 396\\
+    \hline
+    wdbc & 10.03\% & 121.54\% & 124.05\% & 858\\
+    \hline
+    wine & 20.9\% & 104.25\% & 191.04\% & 499\\
+    \hline
+    yeast & 0.88\% & 96.54\% & 105.82\% & 68\\
+    \end{tabular}
+    }%
+    \caption{Impact on key values in comparison to initial projection for each dataset by MSS}
+    \label{tab:standard_comparison_var3_results}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \fbox{%
+    \begin{tabular}{ c || c | c | c }
+    dataset & $\Delta DSC$ & $\Delta CD$ & iterations\\
+    \hline 
+    \hline
+    ecoli & -0.49\% & 99.21\% & 3\\
+    \hline
+    iris & 0\% & 100\% & 3\\
+    \hline
+    statlog & 1.45\% & 113.94\% & 20\\
+    \hline
+    wdbc & 5.1\% & 129.91\% & 53\\
+    \hline
+    wine & 27.68\% & 136.55\% & 255\\
+    \hline
+    yeast & -2.63\% & 101.41\% & 15\\
+    \end{tabular}
+    }%
+    \caption{Impact on key values in comparison to initial projection for each dataset by PSS}
+    \label{tab:standard_comparison_var4_results}
+\end{table}
+
+\subsection{Results for Behaviour with Different Parameters}
+
+
+\begin{table}[H]
+\centering
+    \fbox{%
+    \begin{tabular}{ c || c | c | c | c  }
+    parameter & $\Delta DSC$ & $\Delta CD$ & CDC & iterations\\
+    \hline 
+    \hline
+    Standard & 3.88\% & 100.79\% & 102.05\% & 214\\
+    \hline
+    PT=25 & 3.88\% & 101.01\% & 102.12\% & 210\\
+    \hline
+    PT=50 & 3.88\% & 100.99\% & 102.12\% & 216\\
+    \hline
+    PT=150 & 3.88\% & 100.88\% & 102.02\% & 235\\
+    \hline
+    PT=200 & 3.88\% & 100.88\% & 102.05\% & 254\\
+    \hline
+    500 Iterations & 4.48\% & 100.32\% & 101.5\% & 500\\
+    \hline
+    1000 Iterations & 5.08\% & 99.26\% & 99.97\% & 1000\\
+    \hline
+    2000 Iterations & 5.08\% & 97.69\% & 96.29\% & 2000\\
+    \hline
+    PT Calculation & 4.18\% & 100.71\% & 102.18\% & 163\\
+    \hline
+    Non-Orthographic & 2.99\% & 71.55\% & 140.81\% & 48\\
+    \end{tabular}
+    }%
+    \caption{Impact on key values by parameter change for ecoli dataset by MSS}
+    \label{tab:modified_parameters_ecoli_mss}
+\end{table}
+
+\subsubsection{Analysis of Results for Different Parameters}
+
+\subsection{Results for Convergence and Reliability}
+
+
+\subsection{Comparison with Other Results}

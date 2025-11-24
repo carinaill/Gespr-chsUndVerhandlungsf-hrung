@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: dinat.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: literatur.bib
+Warning--empty pages in Hinton.2002
+You've used 24 entries,
+            3552 wiz_defined-function locations,
+            993 strings with 11022 characters,
+and the built_in function-call counts, 21913 in all, are:
+= -- 2751
+> -- 297
+< -- 604
++ -- 741
+- -- 210
+* -- 2129
+:= -- 3589
+add.period$ -- 27
+call.type$ -- 24
+change.case$ -- 133
+chr.to.int$ -- 24
+cite$ -- 25
+duplicate$ -- 504
+empty$ -- 1457
+format.name$ -- 387
+if$ -- 4251
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 59
+newline$ -- 163
+num.names$ -- 100
+pop$ -- 182
+preamble$ -- 1
+purify$ -- 133
+quote$ -- 0
+skip$ -- 872
+stack$ -- 0
+substring$ -- 2262
+swap$ -- 143
+text.length$ -- 75
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 255
+warning$ -- 1
+while$ -- 235
+width$ -- 0
+write$ -- 278
+(There was 1 warning)

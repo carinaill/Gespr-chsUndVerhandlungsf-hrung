@@ -1,0 +1,214 @@
+\begin{thebibliography}{24}
+% this bibliography was produced with the style dinat.bst v2.5
+\makeatletter
+\newcommand{\dinatlabel}[1]%
+{\ifNAT@numbers\else\NAT@biblabelnum{#1}\hspace{2\labelsep}\fi}
+\makeatother
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
+
+\bibitem[Ankerst u.\,a.(2000)Ankerst, Ester und Kriegel]{ANKERST.2000}
+\dinatlabel{Ankerst u.\,a. 2000} \textsc{Ankerst}, Mihael~; \textsc{Ester},
+  Martin~; \textsc{Kriegel}, Hans-Peter:
+\newblock Towards an effective cooperation of the user and the computer for
+  classification.
+\newblock In: \textsc{Ramakrishnan}, Raghu (Hrsg.)~; \textsc{Stolfo}, Sal
+  (Hrsg.)~; \textsc{Bayardo}, Roberto (Hrsg.)~; \textsc{Parsa}, Ismail (Hrsg.):
+  \emph{Proceedings of the sixth ACM SIGKDD international conference on
+  Knowledge discovery and data mining - KDD '00}.
+\newblock New York, New York, USA~: {ACM Press}, 2000, S.~179--188. --
+\newblock ISBN 1581132336
+
+\bibitem[Belkin und Niyogi(2003)]{Belkin.2003}
+\dinatlabel{Belkin und Niyogi 2003} \textsc{Belkin}, Mikhail~; \textsc{Niyogi},
+  Partha:
+\newblock Laplacian Eigenmaps for Dimensionality Reduction and Data
+  Representation.
+\newblock In: \emph{Neural Computation}
+\newblock 15 (2003), Nr.~6, S.~1373--1396. --
+\newblock ISSN 0899-7667
+
+\bibitem[Blum und Roli(2008)]{Blum.2008}
+\dinatlabel{Blum und Roli 2008} \textsc{Blum}, Christian~; \textsc{Roli},
+  Andrea:
+\newblock Hybrid Metaheuristics: An Introduction.
+\newblock In: \textsc{Kacprzyk}, Janusz (Hrsg.)~; \textsc{Blum}, Christian
+  (Hrsg.)~; \textsc{Aguilera}, Maria Jos{\'e}~B. (Hrsg.)~; \textsc{Roli},
+  Andrea (Hrsg.)~; \textsc{Sampels}, Michael (Hrsg.): \emph{Hybrid
+  Metaheuristics} Bd.~114.
+\newblock Berlin, Heidelberg~: {Springer Berlin Heidelberg}, 2008, S.~1--30. --
+\newblock ISBN 978-3-540-78294-0
+
+\bibitem[Chu u.\,a.(2006)Chu, Moon und Mun]{Chu.2006}
+\dinatlabel{Chu u.\,a. 2006} \textsc{Chu}, Jun-Uk~; \textsc{Moon}, Inhyuk~;
+  \textsc{Mun}, Mu-Seong:
+\newblock A real-time EMG pattern recognition system based on linear-nonlinear
+  feature projection for a multifunction myoelectric hand.
+\newblock In: \emph{IEEE transactions on bio-medical engineering}
+\newblock 53 (2006), Nr.~11, S.~2232--2239
+
+\bibitem[Daniels u.\,a.(2012)Daniels, Grinstein, Russell und
+  Glidden]{Daniels.2012}
+\dinatlabel{Daniels u.\,a. 2012} \textsc{Daniels}, Karen~; \textsc{Grinstein},
+  Georges~; \textsc{Russell}, Adam~; \textsc{Glidden}, Mason:
+\newblock Properties of normalized radial visualizations.
+\newblock In: \emph{Information visualization}
+\newblock 11 (2012), Nr.~4, S.~273--300. --
+\newblock ISSN 1473-8716
+
+\bibitem[Demartines und Herault(1997)]{Demartines.1997}
+\dinatlabel{Demartines und Herault 1997} \textsc{Demartines}, P.~;
+  \textsc{Herault}, J.:
+\newblock Curvilinear component analysis: a self-organizing neural network for
+  nonlinear mapping of data sets.
+\newblock In: \emph{IEEE transactions on neural networks}
+\newblock 8 (1997), Nr.~1, S.~148--154. --
+\newblock ISSN 1045-9227
+
+\bibitem[Dua und Graff(2017)]{Dua.2017}
+\dinatlabel{Dua und Graff 2017} \textsc{Dua}, Dheeru~; \textsc{Graff}, Casey:
+\newblock \emph{UCI Machine Learning Repository}.
+\newblock 2017. --
+\newblock URL \url{http://archive.ics.uci.edu/ml}
+
+\bibitem[Heidari u.\,a.(2021)Heidari, Lakshmivarahan, Mirniaharikandehei,
+  Danala, Maryada, Liu und Zheng]{Heidari.2021}
+\dinatlabel{Heidari u.\,a. 2021} \textsc{Heidari}, Morteza~;
+  \textsc{Lakshmivarahan}, Sivaramakrishnan~; \textsc{Mirniaharikandehei},
+  Seyedehnafiseh~; \textsc{Danala}, Gopichandh~; \textsc{Maryada}, Sai
+  Kiran~R.~; \textsc{Liu}, Hong~; \textsc{Zheng}, Bin:
+\newblock Applying a Random Projection Algorithm to Optimize Machine Learning
+  Model for Breast Lesion Classification.
+\newblock In: \emph{IEEE transactions on bio-medical engineering}
+\newblock 68 (2021), Nr.~9, S.~2764--2775
+
+\bibitem[Hertwig und Pachur(2015)]{Hertwig.2015}
+\dinatlabel{Hertwig und Pachur 2015} \textsc{Hertwig}, Ralph~; \textsc{Pachur},
+  Thorsten:
+\newblock Heuristics, History of.
+\newblock In: \emph{International Encyclopedia of the Social {\&} Behavioral
+  Sciences}.
+\newblock Elsevier, 2015, S.~829--835. --
+\newblock ISBN 9780080970875
+
+\bibitem[Hinton und Roweis(2002)]{Hinton.2002}
+\dinatlabel{Hinton und Roweis 2002} \textsc{Hinton}, Geoffrey~E.~;
+  \textsc{Roweis}, Sam:
+\newblock Stochastic Neighbor Embedding.
+\newblock In: \textsc{{S. Becker}} (Hrsg.)~; \textsc{{S. Thrun}} (Hrsg.)~;
+  \textsc{{K. Obermayer}} (Hrsg.): \emph{Advances in Neural Information
+  Processing Systems} Bd.~15, {MIT Press}, 2002. --
+\newblock URL
+  \url{https://proceedings.neurips.cc/paper/2002/file/6150ccc6069bea6b5716254057a194ef-Paper.pdf}
+
+\bibitem[Hoffman u.\,a.(19--24 Oct. 1997)Hoffman, Grinstein, Marx, Grosse und
+  Stanley]{Hoffman.1924Oct.1997}
+\dinatlabel{Hoffman u.\,a. 19--24 Oct. 1997} \textsc{Hoffman}, P.~;
+  \textsc{Grinstein}, G.~; \textsc{Marx}, K.~; \textsc{Grosse}, I.~;
+  \textsc{Stanley}, E.:
+\newblock DNA visual and analytic data mining.
+\newblock In: \emph{Proceedings. Visualization '97 (Cat. No. 97CB36155)}, IEEE,
+  19-24 Oct. 1997, S.~437--441. --
+\newblock ISBN 0-8186-8262-0
+
+\bibitem[Inselberg(1985)]{Inselberg.1985}
+\dinatlabel{Inselberg 1985} \textsc{Inselberg}, Alfred:
+\newblock The plane with parallel coordinates.
+\newblock In: \emph{The Visual Computer}
+\newblock 1 (1985), Nr.~2, S.~69--91. --
+\newblock ISSN 0178-2789
+
+\bibitem[Inselberg(2009)]{Inselberg.2009}
+\dinatlabel{Inselberg 2009} \textsc{Inselberg}, Alfred:
+\newblock \emph{Parallel Coordinates}.
+\newblock New York, NY~: {Springer New York}, 2009. --
+\newblock ISBN 978-0-387-21507-5
+
+\bibitem[Kandogan(2000)]{Kandogan.2000}
+\dinatlabel{Kandogan 2000} \textsc{Kandogan}, Eser:
+\newblock Star Coordinates: A Multi-dimensional Visualization Technique with
+  Uniform Treatment of Dimensions.
+\newblock In: \emph{In Proceedings of the IEEE Information Visualization
+  Symposium, Late Breaking Hot Topics}, 2000, S.~9--12
+
+\bibitem[Keim u.\,a.(05--07 July 2006)Keim, Mansmann, Schneidewind und
+  Ziegler]{Keim.0507July2006}
+\dinatlabel{Keim u.\,a. 05--07 July 2006} \textsc{Keim}, D.~A.~;
+  \textsc{Mansmann}, F.~; \textsc{Schneidewind}, J.~; \textsc{Ziegler}, H.:
+\newblock Challenges in Visual Data Analysis.
+\newblock In: \emph{Tenth International Conference on Information Visualisation
+  (IV'06)}, IEEE, 05-07 July 2006, S.~9--16. --
+\newblock ISBN 0-7695-2602-0
+
+\bibitem[Keim(2010)]{Keim.2010}
+\dinatlabel{Keim 2010} \textsc{Keim}, Daniel (Hrsg.):
+\newblock \emph{Mastering the information age: Solving problems with visual
+  analytics}.
+\newblock Goslar~: {Eurographics Association}, 2010. --
+\newblock ISBN 978-3-905673-77-7
+
+\bibitem[Lehmann und Theisel(2013)]{Lehmann.2013}
+\dinatlabel{Lehmann und Theisel 2013} \textsc{Lehmann}, D.~J.~;
+  \textsc{Theisel}, H.:
+\newblock Orthographic Star Coordinates.
+\newblock In:
+  \emph{IEEETransactionsonVisualizationandComputerGraphics(ProceedingsIEEEInformationVisualization)}
+\newblock (2013)
+
+\bibitem[McInnes u.\,a.()McInnes, Healy und Melville]{McInnes.09.02.2018}
+\dinatlabel{McInnes u.\,a. } \textsc{McInnes}, Leland~; \textsc{Healy}, John~;
+  \textsc{Melville}, James:
+\newblock \emph{UMAP: Uniform Manifold Approximation and Projection for
+  Dimension Reduction}. --
+\newblock URL \url{http://arxiv.org/pdf/1802.03426v3}
+
+\bibitem[P.M.(2001)]{P.M..2001}
+\dinatlabel{P.M. 2001} \textsc{P.M.}, Todd:
+\newblock Heuristics for Decision and Choice.
+\newblock In: \textsc{Neil}, J.~S. (Hrsg.)~; \textsc{Paul}, B.~B. (Hrsg.):
+  \emph{International Encyclopedia of the Social {\&} Behavioral Sciences}.
+\newblock Oxford~: Pergamon, 2001, S.~6676--6679. --
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/B008043076700629X}. --
+\newblock ISBN 978-0-08-043076-8
+
+\bibitem[Rauber u.\,a.(2018)Rauber, Falc{\~a}o und Telea]{Rauber.2018}
+\dinatlabel{Rauber u.\,a. 2018} \textsc{Rauber}, Paulo~E.~;
+  \textsc{Falc{\~a}o}, Alexandre~X.~; \textsc{Telea}, Alexandru~C.:
+\newblock Projections as visual aids for classification system design.
+\newblock In: \emph{Information visualization}
+\newblock 17 (2018), Nr.~4, S.~282--305. --
+\newblock ISSN 1473-8716
+
+\bibitem[Rubio-S{\'a}nchez u.\,a.(2016)Rubio-S{\'a}nchez, Raya, D{\'i}az und
+  Sanchez]{RubioSanchez.2016}
+\dinatlabel{Rubio-S{\'a}nchez u.\,a. 2016} \textsc{Rubio-S{\'a}nchez}, Manuel~;
+  \textsc{Raya}, Laura~; \textsc{D{\'i}az}, Francisco~; \textsc{Sanchez},
+  Alberto:
+\newblock A comparative study between RadViz and Star Coordinates.
+\newblock In: \emph{IEEE transactions on visualization and computer graphics}
+\newblock 22 (2016), Nr.~1, S.~619--628
+
+\bibitem[Sammon(1969)]{Sammon.1969}
+\dinatlabel{Sammon 1969} \textsc{Sammon}, J.~W.:
+\newblock A nonlinear mapping for data structure analysis.
+\newblock In: \emph{IEEE Transactions on Computers}
+\newblock 18 (1969), Nr.~5, S.~401--409
+
+\bibitem[Tenenbaum u.\,a.(2000)Tenenbaum, de~Silva und
+  Langford]{Tenenbaum.2000}
+\dinatlabel{Tenenbaum u.\,a. 2000} \textsc{Tenenbaum}, J.~B.~; \textsc{Silva},
+  V. de~; \textsc{Langford}, J.~C.:
+\newblock A global geometric framework for nonlinear dimensionality reduction.
+\newblock In: \emph{Science (New York, N.Y.)}
+\newblock 290 (2000), Nr.~5500, S.~2319--2323. --
+\newblock ISSN 0036-8075
+
+\bibitem[{van der Maaten} und Hinton(2008)]{vanderMaaten.2008}
+\dinatlabel{{van der Maaten} und Hinton 2008} \textsc{{van der Maaten}},
+  Laurens~; \textsc{Hinton}, Geoffrey:
+\newblock Viualizing data using t-SNE.
+\newblock In: \emph{Journal of Machine Learning Research}
+\newblock 9 (2008), S.~2579--2605
+
+\end{thebibliography}
