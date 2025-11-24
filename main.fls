@@ -1423,13 +1423,6 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT ./Kapitel/0_Abstract.tex
-INPUT ./Kapitel/0_Abstract.tex
-INPUT ./Kapitel/0_Abstract.tex
-INPUT Kapitel/0_Abstract.tex
-INPUT ./Kapitel/0_Abstract.tex
-INPUT ./Kapitel/0_Abstract.tex
-INPUT Kapitel/0_Abstract.tex
 INPUT ./main.toc
 INPUT main.toc
 INPUT main.toc

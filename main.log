@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.10.9)  24 NOV 2025 14:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.10.9)  24 NOV 2025 15:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1124,17 +1124,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Bilder/ostfalia_logo2.png>]) (./Kapitel/0_erklaerung.tex
-Overfull \hbox (10.70337pt too wide) in paragraph at lines 3--4
-\T1/lmr/m/n/12 gekennze-ich-net habe, und dass die ein-gere-ichte Ar-beit weder voll-ständig noch in wesentlichen
- []
-
-) (./Kapitel/0_Abstract.tex [1
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Bilder/ostfalia_logo2.png>]) (./Kapitel/0_erklaerung.tex) [1
 
 
-
-
-]) [2
 
 
 ] (./main.toc
@@ -1144,7 +1136,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- (./Kapitel/0_Abkuerzungsverzeichnis.tex [3
+ (./Kapitel/0_Abkuerzungsverzeichnis.tex [2
 
 
 ]
@@ -1167,7 +1159,7 @@ Class scrbook Warning: \float@addtolists detected!
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [4
+)) [3
 
 
 ] (./Kapitel/1_Introduction.tex
@@ -1182,12 +1174,12 @@ l.3 \chapter
 
 ]
 chapter 2.
-<Bilder/Keim_vad.png, id=97, 755.82375pt x 525.965pt>
+<Bilder/Keim_vad.png, id=92, 755.82375pt x 525.965pt>
 File: Bilder/Keim_vad.png Graphic file (type png)
 <use Bilder/Keim_vad.png>
 Package pdftex.def Info: Bilder/Keim_vad.png  used on input line 18.
 (pdftex.def)             Requested size: 369.88582pt x 257.39604pt.
-<Bilder/Keim_vad3.png, id=100, 359.43132pt x 209.13531pt>
+<Bilder/Keim_vad3.png, id=95, 359.43132pt x 209.13531pt>
 File: Bilder/Keim_vad3.png Graphic file (type png)
 <use Bilder/Keim_vad3.png>
 Package pdftex.def Info: Bilder/Keim_vad3.png  used on input line 26.
@@ -1288,18 +1280,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 41880 strings out of 478287
- 936393 string characters out of 5849289
+ 41872 strings out of 478287
+ 936233 string characters out of 5849289
  1556651 words of memory out of 5000000
- 59079 multiletter control sequences out of 15000+600000
+ 59076 multiletter control sequences out of 15000+600000
  561082 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,17n,108p,10655b,699s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (33 pages, 514287 bytes).
+Output written on main.pdf (32 pages, 514425 bytes).
 PDF statistics:
- 597 PDF objects out of 1000 (max. 8388607)
- 513 compressed objects within 6 object streams
- 245 named destinations out of 1000 (max. 500000)
+ 592 PDF objects out of 1000 (max. 8388607)
+ 509 compressed objects within 6 object streams
+ 243 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
