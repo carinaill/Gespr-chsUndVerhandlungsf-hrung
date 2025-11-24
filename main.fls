@@ -1320,19 +1320,11 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT ./main.out
 INPUT main.out
-<<<<<<< Updated upstream
 INPUT ./main.out
 INPUT main.out
 INPUT ./main.out
 INPUT main.out
 INPUT ./main.out
-=======
-INPUT ./main.out
-INPUT main.out
-INPUT ./main.out
-INPUT main.out
-INPUT ./main.out
->>>>>>> Stashed changes
 INPUT main.out
 INPUT ./main.out
 INPUT ./main.out
@@ -1354,13 +1346,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
-<<<<<<< Updated upstream
-=======
-INPUT ./Kapitel/0_0_Deckblatt.tex
->>>>>>> Stashed changes
 INPUT ./Kapitel/0_0_Deckblatt.tex
 INPUT ./Kapitel/0_0_Deckblatt.tex
-INPUT Kapitel/0_0_Deckblatt.tex
 INPUT ./Kapitel/0_0_Deckblatt.tex
 INPUT Kapitel/0_0_Deckblatt.tex
 INPUT ./Kapitel/0_0_Deckblatt.tex
@@ -1425,13 +1412,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-<<<<<<< Updated upstream
-=======
-INPUT ./Kapitel/0_erklaerung.tex
->>>>>>> Stashed changes
 INPUT ./Kapitel/0_erklaerung.tex
 INPUT ./Kapitel/0_erklaerung.tex
-INPUT Kapitel/0_erklaerung.tex
 INPUT ./Kapitel/0_erklaerung.tex
 INPUT Kapitel/0_erklaerung.tex
 INPUT ./Kapitel/0_erklaerung.tex
@@ -1463,15 +1445,6 @@ INPUT /usr/share/texmf/tex/latex/lm/ts1lmr.fd
 INPUT /usr/share/texmf/tex/latex/lm/ts1lmr.fd
 INPUT /usr/share/texmf/tex/latex/lm/ts1lmr.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ts1-lmr12.tfm
-<<<<<<< Updated upstream
-INPUT ./Kapitel/1_Introduction.tex
-INPUT ./Kapitel/1_Introduction.tex
-INPUT ./Kapitel/1_Introduction.tex
-INPUT Kapitel/1_Introduction.tex
-INPUT ./Kapitel/1_Introduction.tex
-INPUT ./Kapitel/1_Introduction.tex
-INPUT Kapitel/1_Introduction.tex
-=======
 INPUT ./Kapitel/1_Einfuehrung.tex
 INPUT ./Kapitel/1_Einfuehrung.tex
 INPUT ./Kapitel/1_Einfuehrung.tex
@@ -1480,10 +1453,7 @@ INPUT ./Kapitel/1_Einfuehrung.tex
 INPUT ./Kapitel/1_Einfuehrung.tex
 INPUT Kapitel/1_Einfuehrung.tex
 INPUT ./Kapitel/2_Related_work.tex
->>>>>>> Stashed changes
 INPUT ./Kapitel/2_Related_work.tex
-INPUT ./Kapitel/2_Related_work.tex
-INPUT Kapitel/2_Related_work.tex
 INPUT ./Kapitel/2_Related_work.tex
 INPUT Kapitel/2_Related_work.tex
 INPUT ./Kapitel/2_Related_work.tex
@@ -1492,15 +1462,12 @@ INPUT Kapitel/2_Related_work.tex
 INPUT ./Bilder/Keim_vad.png
 INPUT ./Bilder/Keim_vad.png
 INPUT Bilder/Keim_vad.png
-<<<<<<< Updated upstream
-=======
 INPUT ./Bilder/Keim_vad.png
->>>>>>> Stashed changes
 INPUT ./Bilder/Keim_vad.png
+INPUT ./Bilder/Keim_vad3.png
 INPUT ./Bilder/Keim_vad3.png
 INPUT Bilder/Keim_vad3.png
 INPUT ./Bilder/Keim_vad3.png
-INPUT Bilder/Keim_vad3.png
 INPUT ./Bilder/Keim_vad3.png
 INPUT ./Kapitel/3_Background.tex
 INPUT ./Kapitel/3_Background.tex

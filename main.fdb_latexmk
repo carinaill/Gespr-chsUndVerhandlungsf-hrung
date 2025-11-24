@@ -1,27 +1,14 @@
 # Fdb version 3
-<<<<<<< Updated upstream
-["bibtex main"] 1764002877 "main.aux" "main.bbl" "main" 1764002880
+["bibtex main"] 1764002780 "main.aux" "main.bbl" "main" 1764003896
   "/usr/share/texlive/texmf-dist/bibtex/bst/dinat/dinat.bst" 1136766823 44478 8171722d387d8657f0397923511dcd08 ""
   "literatur.bib" 1763987018 37449 d44c106634d07c32e40ec4daa1f5d68d ""
-  "main.aux" 1764002880 18716 e22c2450b3077942f484f8d1fc43e3d9 "pdflatex"
+  "main.aux" 1764003895 18715 613513d121daff81026e1f20b52147dc "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1764002877 "/home/hiwi-3/GuVF/Hausarbeit/main.tex" "main.pdf" "main" 1764002880
+["pdflatex"] 1764003893 "/home/hiwi-3/GuVF/Hausarbeit/main.tex" "main.pdf" "main" 1764003896
   "/etc/texmf/web2c/texmf.cnf" 1756823319 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/hiwi-3/GuVF/Hausarbeit/main.tex" 1764002870 3690 7410be661a67a6645d7bbdf3be124dec ""
-=======
-["bibtex main"] 1764002780 "main.aux" "main.bbl" "main" 1764002782
-  "/usr/share/texlive/texmf-dist/bibtex/bst/dinat/dinat.bst" 1136766823 44478 8171722d387d8657f0397923511dcd08 ""
-  "literatur.bib" 1763987018 37449 d44c106634d07c32e40ec4daa1f5d68d ""
-  "main.aux" 1764002781 18715 613513d121daff81026e1f20b52147dc "pdflatex"
-  (generated)
-  "main.bbl"
-  "main.blg"
-["pdflatex"] 1764002780 "/home/hiwi-3/GuVF/Hausarbeit/main.tex" "main.pdf" "main" 1764002782
-  "/etc/texmf/web2c/texmf.cnf" 1756823319 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/hiwi-3/GuVF/Hausarbeit/main.tex" 1764002777 3689 10c94f94625fc0c522171b0b433a433e ""
->>>>>>> Stashed changes
+  "/home/hiwi-3/GuVF/Hausarbeit/main.tex" 1764003892 3694 358c02425823a28b8b00cd749c7932e1 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -313,11 +300,7 @@
   "Kapitel/0_Abkuerzungsverzeichnis.tex" 1763993158 440 ae34d36b1f0cf4ca60bd72086f1e3503 ""
   "Kapitel/0_erklaerung.tex" 1763993281 895 f5a54f7f4cc9751a4ae604a3281008b5 ""
   "Kapitel/100_Anhang.tex" 1763987018 9090 3c3a0cda6bade51836541a4c03252efa ""
-<<<<<<< Updated upstream
-  "Kapitel/1_Introduction.tex" 1764002870 54 9b541357e2d2817b232d0bea33365dc5 ""
-=======
-  "Kapitel/1_Einfuehrung.tex" 1764002777 53 964452a99f407f298e2ea2f81cc6b077 ""
->>>>>>> Stashed changes
+  "Kapitel/1_Einfuehrung.tex" 1764003438 60 28efe4c9e0beeb361e287b997c0f573a ""
   "Kapitel/2_Related_work.tex" 1763987018 2957 5b57f7ba1fd0c5c7b70c72ffc51f3254 ""
   "Kapitel/3_Background.tex" 1763987018 4282 d225f749c3ccf17bf2519ea34b43c6cb ""
   "Kapitel/4_Approach.tex" 1763987018 69 722296c2ad0f678f0da5ee2feb5c9096 ""
@@ -327,19 +310,11 @@
   "Kapitel/8_Future_work.tex" 1763987018 53 6b865b5746c4aceaa5bfe83a973ff9d0 ""
   "Meta/praeampel.tex" 1763987018 4633 f42025ccf21489f8160ee6db8608f993 ""
   "Meta/uarial.sty" 1763987018 856 35196ce1d5b2d28943092f165790986f ""
-<<<<<<< Updated upstream
-  "main.aux" 1764002880 18716 e22c2450b3077942f484f8d1fc43e3d9 "pdflatex"
+  "main.aux" 1764003895 18715 613513d121daff81026e1f20b52147dc "pdflatex"
   "main.bbl" 1764002877 9647 cdbcefa610f5bc2297e6c0f6bdf08148 "bibtex main"
-  "main.out" 1764002879 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1764002870 3690 7410be661a67a6645d7bbdf3be124dec ""
-  "main.toc" 1764002880 2951 8fbd20d0fd18a9952cc55d595721339e "pdflatex"
-=======
-  "main.aux" 1764002781 18715 613513d121daff81026e1f20b52147dc "pdflatex"
-  "main.bbl" 1764002780 9647 cdbcefa610f5bc2297e6c0f6bdf08148 "bibtex main"
-  "main.out" 1764002781 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1764002777 3689 10c94f94625fc0c522171b0b433a433e ""
-  "main.toc" 1764002781 2950 fa6d3f80921e3c6ef9bc6087fd93b409 "pdflatex"
->>>>>>> Stashed changes
+  "main.out" 1764003894 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1764003892 3694 358c02425823a28b8b00cd749c7932e1 ""
+  "main.toc" 1764003895 2950 fa6d3f80921e3c6ef9bc6087fd93b409 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
