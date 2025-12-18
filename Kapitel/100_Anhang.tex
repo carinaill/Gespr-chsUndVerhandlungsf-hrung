@@ -52,216 +52,35 @@
         
     
 
-\begin{figure}[H]
-\begin{algorithm}[H]
-\DontPrintSemicolon
-\SetKwProg{Fn}{function}{:}{}
-\Fn{heuristic\_random\_selection\_shift($df\_p, iterator, num\_classes$)}{
-\KwData{$df\_p$ is the dataframe in projection space, $iterator$ is the current iteration step, $num\_classes$ is the amount of different classes in the dataset}
-\KwResult{$dp$ shift vector, $selected\_class$ to be shifted, calculated $DSC\_value$, calculated $CD\_value$, calculated $total\_dist$}
-\tcc{extract star coords and class of data to a new dataframe}
-df\_star = df\_p[['X','Y','class']]\;
-\tcc{calculate class centroids and save them in a new dataframe}
-df\_centroids = df\_star.groupby('class', sort=True).mean().reset\_index()\;
-\tcc{calculate coordinates of the central centroid}
-central\_centroid = df\_centroids[['X', 'Y']].mean()\;
-\tcc{call a function to calculate all distances between centroids}
-df\_distances = calc\_centroid\_distances(df\_centroids)\;
-\tcc{calculate the distance from each point to its associated centroid}
-df\_centroid\_distances = calc\_dist\_p\_to\_assoc\_centroid(df\_centroids, df\_star)\;
-\tcc{calculate CD, DSC and total\_dist for result}
-CD\_value = df\_centroid\_distances['distance'].sum()\;
-DSC\_value = calc\_dsc(df\_centroids, df\_star)\;
-total\_dist = df\_distances['distance'].sum()\;
-\color{green}
-\tcc{randomly choose a class to be shifted}
-selected\_class = np.random.randint(num\_classes)\;
-\color{black}
-\tcc{select all distances for selected class}
-selected\_class\_distances = df\_distances.(df\_distances[selected\_class])\;
-\tcc{other\_class is the nearest class to selected\_class}
-min\_selected\_class\_distance = selected\_class\_distances['distance'].idxmin()\;
-\tcc{calculate the new shifting vector dp}
-dp = calc\_dp(df\_centroids, selected\_class, other\_class, central\_centroid, num\_iter)\;
-}
-\caption{Random Selection Shift RSS}
-\label{func:rss}
-\end{algorithm}
-\caption{Pseudocode for RSS}
-\end{figure}
-
-\begin{figure}[H]
-\begin{algorithm}[H]
-\DontPrintSemicolon
-\SetKwProg{Fn}{function}{:}{}
-\Fn{heuristic\_order\_selection\_shift($df\_p, iterator, num\_classes$)}{
-\KwData{$df\_p$ is the dataframe in projection space, $iterator$ is the current iteration step, $num\_classes$ is the amount of different classes in the dataset}
-\KwResult{$dp$ shift vector, $selected\_class$ to be shifted, calculated $DSC\_value$, calculated $CD\_value$, calculated $total\_dist$}
-\tcc{extract star coords and class of data to a new dataframe}
-df\_star = df\_p[['X','Y','class']]\;
-\tcc{calculate class centroids and save them in a new dataframe}
-df\_centroids = df\_star.groupby('class', sort=True).mean().reset\_index()\;
-\tcc{calculate coordinates of the central centroid}
-central\_centroid = df\_centroids[['X', 'Y']].mean()\;
-\tcc{call a function to calculate all distances between centroids}
-df\_distances = calc\_centroid\_distances(df\_centroids)\;
-\tcc{calculate the distance from each point to its associated centroid}
-df\_centroid\_distances = calc\_dist\_p\_to\_assoc\_centroid(df\_centroids, df\_star)\;
-\tcc{calculate CD, DSC and total\_dist for result}
-CD\_value = df\_centroid\_distances['distance'].sum()\;
-DSC\_value = calc\_dsc(df\_centroids, df\_star)\;
-total\_dist = df\_distances['distance'].sum()\;
-\color{green}
-\tcc{choose a class to be shifted by order}
-selected\_class = num\_iter \% num\_classes)\;
-\color{black}
-\tcc{select all distances for selected class}
-selected\_class\_distances = df\_distances.(df\_distances[selected\_class])\;
-\tcc{other\_class is the nearest class to selected\_class}
-min\_selected\_class\_distance = selected\_class\_distances['distance'].idxmin()\;
-\tcc{calculate the new shifting vector dp}
-dp = calc\_dp(df\_centroids, selected\_class, other\_class, central\_centroid, num\_iter)\;
-}
-\caption{Order Selection Shift - OSS}
-\label{func:oss}
-\end{algorithm}
-\caption{Pseudocode for OSS}
-\end{figure}
-
-\begin{figure}[H]
-\begin{algorithm}[H]
-\DontPrintSemicolon
-\SetKwProg{Fn}{function}{:}{}
-\Fn{heuristic\_order\_selection\_shift($df\_p, iterator, num\_classes$)}{
-\KwData{$df\_p$ is the dataframe in projection space, $iterator$ is the current iteration step, $num\_classes$ is the amount of different classes in the dataset}
-\KwResult{$dp$ shift vector, $selected\_class$ to be shifted, calculated $DSC\_value$, calculated $CD\_value$, calculated $total\_dist$}
-\tcc{extract star coords and class of data to a new dataframe}
-df\_star = df\_p[['X','Y','class']]\;
-\tcc{calculate class centroids and save them in a new dataframe}
-df\_centroids = df\_star.groupby('class', sort=True).mean().reset\_index()\;
-\tcc{calculate coordinates of the central centroid}
-central\_centroid = df\_centroids[['X', 'Y']].mean()\;
-\tcc{call a function to calculate all distances between centroids}
-df\_distances = calc\_centroid\_distances(df\_centroids)\;
-\tcc{calculate the distance from each point to its associated centroid}
-df\_centroid\_distances = calc\_dist\_p\_to\_assoc\_centroid(df\_centroids, df\_star)\;
-\tcc{calculate CD, DSC and total\_dist for result}
-CD\_value = df\_centroid\_distances['distance'].sum()\;
-DSC\_value = calc\_dsc(df\_centroids, df\_star)\;
-total\_dist = df\_distances['distance'].sum()\;
-\color{green}
-\tcc{find the maxmimum distance}
-max\_dist\_idx = df\_centroid\_distances['distance'].idxmax()\;
-\tcc{select the point that is to be shifted}
-centroid\_id = df\_centroid\_distances.loc[max\_dist\_idx, 'class']\;
-centroid\_coords = [df\_centroids.loc[centroid\_id, 'X'], df\_centroids.loc[centroid\_id, 'Y']]\;
-point\_coord = [df\_centroid\_distances.loc[max\_dist\_idx, 'X'], df\_centroid\_distances.loc[max\_dist\_idx, 'Y']]\;
-\tcc{create noise}
-noise = np.random.normal(0, 1, 1) * 100 / (1000 + num\_iter)\;
-\tcc{calculate the new shifting vector dp}
-dp = [centroid\_coords[0] - point\_coord[0] + noise, centroid\_coords[1] - point\_coord[1] + noise]\;
-}
-\caption{Point Selection Shift - PSS}
-\label{func:pss}
-\end{algorithm}
-\caption{Pseudocode for PSS}
-\end{figure}
-
-\chapter{Key values for all heuristics for each dataset}
-\label{appendix:key_values_heuristics}
-
 \begin{table}[H]
 \centering
     \fbox{%
-    \begin{tabular}{ c || c | c | c | c | c | c }
-    2.Schritt & Verhandelner & $DSC_{end}$ & $CD_{start}$ & $CD_{end}$ & $d_{c,total,start}$ & $d_{c,total,end}$ \\
+    \begin{tabular}{ c | p{5cm} | c }
+    \textbf{3. Schritt:} \\ \textbf{Bedürfnisse und Motive} & \textbf{Tieferliegende} \\ \textbf{Interessen}   & \textbf{Relative Bedeutung} \\
     \hline 
     \hline
-    ecoli & 63.88\% & 65.07\% & 11636 & 11651 & 3073 & 3086\\
+    \textbf{Meine Interessen:} &  & \\
     \hline
-    iris & 89.93\% & 89.93\% & 3585 & 3498 & 340 & 358\\
+    Anerkennung & Wertschätzung, Status & 80\\
     \hline
-    statlog & 21.06\% & 28.76\% & 65743 & 65963 & 112 & 222\\
+    klare Kommunikation & Struktur, Sicherheit, weniger Stress & 100\\
     \hline
-    wdbc & 86.27\% & 94.72\% & 22820 & 16437 & 79 & 66\\
+    weniger Fehler & Professionalität, Sicherheit & 100\\
     \hline
-    wine & 72.32\% & 92.66\% & 7703 & 7539 & 201 & 353\\
+    effiziente Prozesse & Kompetenz erleben Wirksamkeit, Planbarkeit & 95\\
     \hline
-    yeast & 27.44\% & 27.38\% & 44547 & 44911 & 2613 & 2635\\
+    \hline
+    \textbf{Interessen der Gegenseite:}  & & \\
+    \hline
+    Anerkennung & ökonomische Sicherheit & 100\\
+    \hline
+    Umstrukturierung verteidigen & Geld/Zeit sparen, Autorität & 100\\
+    \hline
+    Einheitliche Prozesse & Kontrolle, Ordnung & 95\\
+    \hline
+    positive Außenwirkung & Reputation & 90\\
     \end{tabular}
     }%
-    \caption{Key values for RSS for each dataset}
+    \caption{Bedürfnisse und Motive}
     \label{tab:standard_comparison_var1}
-\end{table}
-
-\begin{table}[H]
-\centering
-    \fbox{%
-    \begin{tabular}{ c || c | c | c | c | c | c }
-    dataset & $DSC_{start}$ & $DSC_{end}$ & $CD_{start}$ & $CD_{end}$ & $d_{c,total,start}$ & $d_{c,total,end}$ \\
-    \hline 
-    \hline
-    ecoli & 63.88\% & 63.88\% & 11636 & 11652 & 3073 & 3078\\
-    \hline
-    iris & 89.93\% & 90.6\% & 3585 & 3483 & 340 & 364\\
-    \hline
-    statlog & 21.06\% & 22.76\% & 65743 & 65784 & 112 & 132\\
-    \hline
-    wdbc & 86.27\% & 94.72\% & 22820 & 16399 & 79 & 65\\
-    \hline
-    wine & 72.32\% & 93.22\% & 7703 & 7549 & 201 & 357\\
-    \hline
-    yeast & 27.44\% & 27.44\% & 44547 & 44713 & 2613 & 2616\\
-    \end{tabular}
-    }%
-    \caption{Key values for OSS for each dataset}
-    \label{tab:standard_comparison_var2}
-\end{table}
-
-\begin{table}[H]
-\centering
-    \fbox{%
-    \begin{tabular}{ c || c | c | c | c | c | c }
-    dataset & $DSC_{start}$ & $DSC_{end}$ & $CD_{start}$ & $CD_{end}$ & $d_{c,total,start}$ & $d_{c,total,end}$ \\
-    \hline 
-    \hline
-    ecoli & 63.88\% & 67.76\% & 11636 & 11545 & 3073 & 3136\\
-    \hline
-    iris & 89.93\% & 93.29\% & 3585 & 3111 & 340 & 444\\
-    \hline
-    statlog & 21.06\% & 41.27\% & 65743 & 62631 & 112 & 415\\
-    \hline
-    wdbc & 86.27\% & 96.3\% & 22820 & 18776 & 79 & 98\\
-    \hline
-    wine & 72.32\% & 93.22\% & 7703 & 7389 & 201 & 384\\
-    \hline
-    yeast & 27.44\% & 28.32\% & 44547 & 46156 & 2613 & 2765\\
-    \end{tabular}
-    }%
-    \caption{Key values for MSS for each dataset}
-    \label{tab:standard_comparison_var3}
-\end{table}
-
-\begin{table}[H]
-\centering
-    \fbox{%
-    \begin{tabular}{ c || c | c | c | c }
-    dataset & $DSC_{start}$ & $DSC_{end}$ & $CD_{start}$ & $CD_{end}$ \\
-    \hline 
-    \hline
-    ecoli & 63.88\% & 63.39\% & 11636 & 11729\\
-    \hline
-    iris & 89.93\% & 89.93\% & 3585 & 3585\\
-    \hline
-    statlog & 21.06\% & 22.51\% & 65743 & 57698\\
-    \hline
-    wdbc & 86.27\% & 91.37\% & 22820 & 17566\\
-    \hline
-    wine & 72.32\% & 100\% & 7703 & 5641\\
-    \hline
-    yeast & 27.44\% & 24.81\% & 44547 & 43926\\
-    \end{tabular}
-    }%
-    \caption{Key values for PSS for each dataset}
-    \label{tab:standard_comparison_var4}
 \end{table}
