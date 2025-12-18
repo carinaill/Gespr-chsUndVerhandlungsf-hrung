@@ -48,39 +48,40 @@
     \dots \\
     \hline
     \end{tabularx}
-    \end{table}
-        
-    
+\end{table}
+
 
 \begin{table}[H]
-\centering
-    \fbox{%
-    \begin{tabular}{ c | p{5cm} | c }
-    \textbf{3. Schritt:} \\ \textbf{Bedürfnisse und Motive} & \textbf{Tieferliegende} \\ \textbf{Interessen}   & \textbf{Relative Bedeutung} \\
-    \hline 
-    \hline
-    \textbf{Meine Interessen:} &  & \\
-    \hline
-    Anerkennung & Wertschätzung, Status & 80\\
-    \hline
-    klare Kommunikation & Struktur, Sicherheit, weniger Stress & 100\\
-    \hline
-    weniger Fehler & Professionalität, Sicherheit & 100\\
-    \hline
-    effiziente Prozesse & Kompetenz erleben Wirksamkeit, Planbarkeit & 95\\
-    \hline
-    \hline
-    \textbf{Interessen der Gegenseite:}  & & \\
-    \hline
-    Anerkennung & ökonomische Sicherheit & 100\\
-    \hline
-    Umstrukturierung verteidigen & Geld/Zeit sparen, Autorität & 100\\
-    \hline
-    Einheitliche Prozesse & Kontrolle, Ordnung & 95\\
-    \hline
-    positive Außenwirkung & Reputation & 90\\
-    \end{tabular}
-    }%
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Zeilenhöhe etwas vergrößern
+        
+    \begin{tabularx}{\textwidth}{|X|p{5cm}|>{\centering\arraybackslash}X|}
+        \hline
+        \textbf{3. Schritt: Bedürfnisse und Motive} 
+        & \textbf{Tieferliegende Interessen} („Warum?“ und „zu welchem Zweck?“)
+        & \textbf{Relative Bedeutung} (max. 100 Punkte) \\
+        \hline
+        \textbf{Meine Interessen:} & & \\
+        \hline
+        Anerkennung & Wertschätzung, Status & 80 \\
+        \hline
+        klare Kommunikation & Struktur, Sicherheit, weniger Stress & 100 \\
+        \hline
+        weniger Fehler & Professionalität, Sicherheit & 100 \\
+        \hline
+        effiziente Prozesse & \makecell[l]{Kompetenz erleben \\ Wirksamkeit, Planbarkeit} & 95 \\
+        \hline
+        \textbf{Interessen der Gegenseite:} & & \\
+        \hline
+        Anerkennung & ökonomische Sicherheit & 100 \\
+        \hline
+        Umstrukturierung verteidigen & Geld/Zeit sparen, Autorität & 100 \\
+        \hline
+        Einheitliche Prozesse & Kontrolle, Ordnung & 95 \\
+        \hline
+        positive Außenwirkung & Reputation & 90 \\
+        \hline
+    \end{tabularx}
     \caption{Bedürfnisse und Motive}
     \label{tab:standard_comparison_var1}
 \end{table}
