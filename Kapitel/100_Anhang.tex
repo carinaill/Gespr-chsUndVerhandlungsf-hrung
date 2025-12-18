@@ -1,5 +1,56 @@
 \chapter{Pseudocode for Heuristics}
 \label{appendix:pseudocode_heuristics}
+    
+\begin{table}[h]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+        
+    \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|
+                                  >{\raggedright\arraybackslash}X|}
+    \hline
+    \multirow{3}{=}{\textbf{1. Schritt:}\\
+    Feststellung der relevanten Parteien}
+    &
+    \textbf{Verhandelnder:} \textit{Teamassistentinnen} \\ \cline{2-2}
+        
+    &
+    \textbf{Gegenseite:} \textit{Vorgesetzte} \\ \cline{2-2}
+        
+    &
+    \textbf{Gegenstand:} Aufgabenverteilung \\
+    \hline
+    \textbf{Personen auf „meiner Seite“, die an dem Ergebnis interessiert sein könnten:}
+    &
+    \textbf{Personen auf der „Gegenseite“, die an dem Ergebnis interessiert sein könnten:} \\
+    \hline
+    Interessengruppen? Teamassistenz-Kolleginnen
+    &
+    Interessengruppen? Geschäftsführung / Service Center \\
+    \hline
+    Freunde? nicht relevant
+    &
+    Freunde? nicht relevant \\
+    \hline
+    Familie? indirekt betroffen durch Stress
+    &
+    Familie? nicht relevant \\
+    \hline
+    Chef? Projektleiter
+    &
+    Chef? höhere Führungsebene, Unternehmensleitung \\
+    \hline
+    Sonstige? Kunden
+    &
+    Sonstige? andere Abteilungen, die mit der Umstrukturierung zufrieden sind \\
+    \hline
+    \dots
+    &
+    \dots \\
+    \hline
+    \end{tabularx}
+    \end{table}
+        
+    
 
 \begin{figure}[H]
 \begin{algorithm}[H]
@@ -123,7 +174,7 @@ dp = [centroid\_coords[0] - point\_coord[0] + noise, centroid\_coords[1] - point
 \centering
     \fbox{%
     \begin{tabular}{ c || c | c | c | c | c | c }
-    dataset & $DSC_{start}$ & $DSC_{end}$ & $CD_{start}$ & $CD_{end}$ & $d_{c,total,start}$ & $d_{c,total,end}$ \\
+    2.Schritt & Verhandelner & $DSC_{end}$ & $CD_{start}$ & $CD_{end}$ & $d_{c,total,start}$ & $d_{c,total,end}$ \\
     \hline 
     \hline
     ecoli & 63.88\% & 65.07\% & 11636 & 11651 & 3073 & 3086\\
