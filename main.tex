@@ -54,15 +54,7 @@
 	
 	\input{Kapitel/0_0_Deckblatt}
     
-    % = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =	
-	
-	\frontmatter
-	\pagenumbering{Roman}
-	\ifnum\value{documentfakultaet}=1
-		\input{Kapitel/0_erklaerung}
-		\markboth{Erklärung}{}
-	\fi
-    
+   
     % = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =
 	
 	% disable header
@@ -112,14 +104,13 @@
     % = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =
 
     % Bilbliography
-	\vspace{3\baselineskip}
 	\bibliographystyle{dinat} 
 	\bibliography{literatur}
 	
 	% = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =
 	
-	\ifnum\value{documentfakultaet}=0
-		\input{erklaerung}
+	\ifnum\value{documentfakultaet}=1
+		\input{Kapitel/0_erklaerung}
 		\markboth{Erklärung}{}
 	\fi
 	
