@@ -60,15 +60,12 @@
 	% disable header
 	\fancyhead[L]{\chaptermark}  % L -> Left part
 	\fancyhead[RO]{\chaptermark} % RO -> Right part on Odd pages
-	
+	\fancypagestyle{plain}{
+	\fancyhf{}
+	}
 	\tableofcontents % Inhaltsverzeichnis
-	
-	% = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =
-	
-	\input{Kapitel/0_Abkuerzungsverzeichnis}
-	
-	% = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =
-	
+	\thispagestyle{empty}
+
 	\mainmatter
 	
 	% reanable header
