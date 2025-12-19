@@ -40,11 +40,13 @@
 
 %=======================================================================
 
-
+\usepackage{float}
 \usepackage{tabularx}
+\usepackage{caption}
 \usepackage{array}
-\usepackage{makecell}
 \usepackage{multirow}
+\usepackage{makecell}
+
 
 \begin{document}	
 
@@ -120,20 +122,5 @@
 		\input{erklaerung}
 		\markboth{Erklärung}{}
 	\fi
-	
-	% = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =
-	
-    %\addtocontents{toc}{\cftpagenumbersoff{chapter}} % Keine Seitenzahl im Inhaltsverzeichnis
-	\vspace{50\baselineskip}
-	\begin{appendices}              % Anhang Titel-Seite
-	\end{appendices}
-	
-	\fancyfoot[R] {\thepage}        % Seitenzahl Right
-	
-	\appendix
-	\input{Kapitel/100_Anhang}
-	%\postappendix
-	
-	% = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =
 	
 \end{document}
