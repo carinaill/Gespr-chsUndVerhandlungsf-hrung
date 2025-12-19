@@ -52,15 +52,7 @@
 	
 	\input{Kapitel/0_0_Deckblatt}
     
-    % = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =	
-	
-	\frontmatter
-	\pagenumbering{Roman}
-	\ifnum\value{documentfakultaet}=1
-		\input{Kapitel/0_erklaerung}
-		\markboth{Erklärung}{}
-	\fi
-    
+   
     % = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =
 	
 	% disable header
@@ -110,21 +102,19 @@
     % = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =
 
     % Bilbliography
-	\vspace{3\baselineskip}
 	\bibliographystyle{dinat} 
 	\bibliography{literatur}
 	
 	% = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =
 	
-	\ifnum\value{documentfakultaet}=0
-		\input{erklaerung}
+	\ifnum\value{documentfakultaet}=1
+		\input{Kapitel/0_erklaerung}
 		\markboth{Erklärung}{}
 	\fi
 	
 	% = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =
 	
     %\addtocontents{toc}{\cftpagenumbersoff{chapter}} % Keine Seitenzahl im Inhaltsverzeichnis
-	\vspace{50\baselineskip}
 	\begin{appendices}              % Anhang Titel-Seite
 	\end{appendices}
 	
@@ -135,5 +125,6 @@
 	%\postappendix
 	
 	% = = = = =	= = = = = = = = = = = = = = = = = = = = = = = =
+	
 	
 \end{document}
